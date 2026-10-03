@@ -1,0 +1,20 @@
+
+li.btn-bg-me:nth-of-type(even){
+background-color: green;
+
+
+}
+
+li.btn-bg-me:nth-of-type(odd){
+    background-color: darkgreen;
+}
+
+
+@media (max-width:600px) {
+    #tasks li {
+        width: 100%;
+    } 
+}
+
+
+
