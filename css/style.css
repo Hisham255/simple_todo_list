@@ -1,20 +1,114 @@
+/* ! body home section start */
+#body-home {
+    background-image: url(../img/555555.jfif);
+    background-size: cover;
+}
 
-li.btn-bg-me:nth-of-type(even){
-background-color: green;
+/* ! title start */
+.title-home {
+    font-size: clamp(18px , 35px , 70px);
+    font-family: monospace;
+    
+    letter-spacing: 2px;
+    font-family: "Black Ops One";
+}
 
+/* ? title end */
+
+/* ! form home section start */
+.form-home {
+    background-image: url(../img/form.jfif);
+    background-size: cover;
+    border-radius: 25px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    height: 420px;
+    margin-top: 100px;
+}
+
+@media (max-width:1199px) {
+    .form-home{
+        margin-top: 20px;
+        margin-bottom: 50px;
+        height: 350px;
+    }
+}
+
+#taskPlace{
+    background-color: rgba(255, 255, 255, 0.753);
+}
+
+#mseErorr{
+    font-size: clamp(14px , 16px , 18px);
+}
+
+/* ? form home section end */
+
+/* ! tasks detail section start */
+#tasksDetail {
+    font-size: 16px;
 
 }
 
-li.btn-bg-me:nth-of-type(odd){
-    background-color: darkgreen;
+.form-home h6:last-child {
+    width: fit-content;
+    display: none;
+}
+
+/* ? tasks detail section end */
+
+/* ! tasks section start */
+#tasks {
+    border-radius: 25px;
+    padding: 20px 30px;
+    background-color: rgba(7, 42, 99, 0.283);
+    min-height: 600px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.task-me div input[type="checkbox"] {
+    accent-color: rgb(0, 142, 80);
+    width: 20px;
+    height: 20px;
+}
+
+.task-me:nth-of-type(even){
+    background-color: #012545;
+}
+.task-me:nth-of-type(odd){
+    background-color: #003564;
+}
+
+.done{
+    text-decoration: line-through;
 }
 
 
-@media (max-width:600px) {
-    #tasks li {
-        width: 100%;
-    } 
+
+.task-me div p {
+    
+    font-size: clamp(16px , 20px , 22px);
+    font-weight: 700;
+    font-family: "Inter";
+    letter-spacing: 1.7px;
 }
+
+.delete-btn {
+    font-size: 25px;
+    width: 20px;
+    height: 20px;
+    color: rgb(234, 0, 152);
+
+}
+
+/* ? tasks section end */
+
+
+
+
+/* ? body home section end */
+
+
+
 
 
 

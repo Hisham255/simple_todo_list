@@ -6,6 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To-do list</title>
 
+    <!-- ! google fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital@0;1&display=swap"
+        rel="stylesheet">
+
+
+
+    <!-- ! AOS css file -->
+    <link rel="stylesheet" href="css/aos.css">
+
     <!-- ! bootstrap css file -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
 
@@ -14,46 +26,43 @@
 
 </head>
 
-<body>
+<body id="body-home" class="pt-5">
 
-    <div class="container-fluid px-5">
-        <div class="row ">
-            <div class="col-md-10 mx-auto">
-                <h1 class="text-center text-success font-weight-bolder mt-5 pt-5">To-Do list</h1>
+    <section class="container-fluid px-5">
+        <div class="row">
+
+            <div class="col-xl-5 col-12 mx-xl-0 mx-auto form-home p-4" data-aos="zoom-in" data-aos-duration="800">
+                <h1 data-aos="zoom-in" data-aos-duration="1000" class="text-center text-white font-weight-bolder mt-3 title-home">To-Do list</h1>
 
 
-                <form id="taskForm" action="#" class="mt-4">
-                    <input id="taskPlace" type="text" placeholder="Enter Your Task" class="form-control" autofocus>
+                <form id="taskForm" action="#" class="mt-4 mb-5 w-100">
+                    <input data-aos="zoom-in" data-aos-delay="200" data-aos-duration="1500" id="taskPlace" type="text" placeholder="Enter Your Task" class="form-control" autofocus>
 
-                    <input type="submit" class="btn btn-block btn-success mt-4" value="Enter">
+                    <input data-aos="zoom-in" data-aos-delay="400" data-aos-duration="1500" type="submit" class="btn btn-block btn-primary mt-4" value="Enter">
                 </form>
 
-                <ul id="tasks" class="w-100 list-unstyled  mt-4 d-flex flex-wrap ">
+                <h6 data-aos="fade-up" data-aos-duration="2000" class="text-center text-white mb-xl-5 mb-3">Total Tasks: <span id="tasksTotal"> </span> | Completed:
+                    <span id="tasksDone" class="text-success"> </span></h6>
+                <h6 id="mseErorr" class="alert-danger py-2 px-3 mx-auto text-center rounded"></h6>
+            </div>
 
-
-
+            <div class="col-xl-5 col-12  ml-xl-auto mx-xl-0 mx-auto ">
+                <ul id="tasks" class="w-100 list-unstyled ">
 
                 </ul>
-
-
             </div>
+
         </div>
-    </div>
-
-
-
-
-
-
-
-
-
-
-
+    </section>
 
     <script src="js/jquery.slim.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/iconify-icon.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
 
     <!-- ! js file  -->
